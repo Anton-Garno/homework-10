@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Homework10
 {
@@ -10,9 +10,8 @@ namespace Homework10
             string name = Console.ReadLine();
             Console.WriteLine("Enter your Family name(Surname) ");
             string familyName = Console.ReadLine();
-            char[] familyNameArray = familyName.ToCharArray();
-            char [] nameArray = name.ToCharArray();
-            if (familyNameArray[0] == nameArray[0])
+            
+            if (name[0] == familyName[0])
             {
                 Console.WriteLine("Your name and family name starts with the same letter.");
             }
